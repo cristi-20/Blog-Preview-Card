@@ -1,0 +1,100 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:hsl(47, 88%, 63%);
+    --white:#fff;
+    --black:hsl(0, 0%, 7%);
+    --grey:hsl(0, 1%, 38%);
+}
+
+/* Utility classes */
+/* Margin Classes */
+.mb-15 {
+    margin-bottom:1.5em
+}
+
+.mb-75 {
+    margin-bottom: 0.75em;
+}
+
+/* Padding Classes */
+.p-15 {
+    padding:1.5em;
+}
+
+/* Colors */
+.f-grey {
+    color:var(--grey);
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
+
+.container {
+   display: grid;
+   place-items: center;
+   min-height: 100vh;
+}
+
+
+
+img {
+    width: 100%;
+    display: block;
+    border-radius:10px;
+}
+
+.card {
+    background:var(--white);
+    border-radius:20px;
+    max-width: 23rem;
+    filter:drop-shadow(8px 8px);
+}
+
+.learning {
+    background:var(--primary-color);
+    padding-block:0.25em;
+    padding-inline:0.75em;
+    font-weight:900;
+    width: fit-content;
+    border-radius:4px;
+}
+
+.main-header {
+    font-size: 1.25rem;
+    font-weight: 900;
+
+    a {
+        text-decoration: none;
+        color:var(--black);
+
+        &:hover {
+            color:var(--grey);
+            cursor:pointer;
+        }
+    }
+   
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap:0.75em;
+
+    img {
+        width: 45px;
+        height: 45px;
+    }
+
+    p {
+        font-weight: 600;
+    }
+}
